@@ -35,7 +35,7 @@
 ## Features
 List the ready features here:
 - It shows the Analog Voltage of both sensors (0-4095)
-- Converts ADC to Voltage
+- Converts ADC to Voltage (0.0 - 3.3)
 
 
 ## Screenshots
