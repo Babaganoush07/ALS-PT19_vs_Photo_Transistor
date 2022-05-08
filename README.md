@@ -1,6 +1,6 @@
 # ALS-PT19 vs Photo Transistor
-> I was curios about using Light Sensors in projects and
-> I wanted to see the difference between the two.
+> I was curios about using Light Sensors in projects and I couldn't decide between these two.
+> So I got both and I wanted to compare them agianst eachother.
 
 
 ## Table of Contents
