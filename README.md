@@ -17,14 +17,19 @@
 ## General Information
 - I thought it might be cool to add a light sensors to a project.
 - Couldn't decide which one to get, so I got these 2.
-- So here is a way to see how they both react to the same envirnment.
+- So here is a way to see how they both react to the same environment.
 
 
 ## Technologies Used
+**SOFTWARE**
 - [Adruino 1.8.19](https://www.arduino.cc/en/software)
 - [TFT_eSPI](https://github.com/Bodmer/TFT_eSPI)
+
+**HARDWARE**
+- [Lilygo TTGO T-Display](https://www.amazon.com/dp/B099MPFJ9M?psc=1&ref=ppx_yo2ov_dt_b_product_details)
 - [ALS-PT19](https://www.adafruit.com/product/2748)
 - [Photo Transister](https://www.adafruit.com/product/2831)
+- [Through-Hole Resistors - 10K ohm](https://www.adafruit.com/product/2784)
 
 
 ## Features
@@ -39,10 +44,13 @@ List the ready features here:
 
 ## Setup
 Straight from Adafruit:
+
 **ALS-PT19**
+
 "It's a pretty simple sensor - connect - to ground, + to 2.5V-5.5V or so to power it. Now measure the analog voltage on the OUT pin. That's it! The voltage will increase when the sensor detects more light."
 
 **Photo Transistor**
+
 "To use, connect the pin connected to the 'thicker' part of the sensor (longer pin) to 3-15VDC or so, and the thinner-part (shorter) pin through a ~1K-10K series resistor to ground. When it's dark, there's almost no current flowing through the sensor or resistor and the analog voltage is near ground. When there's light near the sensor, the current through the resistor will increase, raising the voltage. You can adjust the series resistor to get the voltage range you need and measure the analog voltage with a microcontroller."
 
 
@@ -52,7 +60,7 @@ to make a better decision for which one will work best for you.
 
 
 ## Project Status
-Project is: _complete_
+Project is: _In progress_
 
 
 ## Acknowledgements
