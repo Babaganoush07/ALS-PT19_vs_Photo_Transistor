@@ -51,7 +51,9 @@ Straight from Adafruit:
 
 **Photo Transistor**
 
-"To use, connect the pin connected to the 'thicker' part of the sensor (longer pin) to 3-15VDC or so, and the thinner-part (shorter) pin through a ~1K-10K series resistor to ground. When it's dark, there's almost no current flowing through the sensor or resistor and the analog voltage is near ground. When there's light near the sensor, the current through the resistor will increase, raising the voltage. You can adjust the series resistor to get the voltage range you need and measure the analog voltage with a microcontroller."
+"To use, connect the pin connected to the 'thicker' part of the sensor (longer pin) to 3-15VDC or so, and the thinner-part (shorter) pin through a ~1K-10K series resistor to ground. When it's dark, there's almost no current flowing through the sensor or resistor and the analog voltage is near ground. When there's light near the sensor, the current through the resistor will increase, raising the voltage. You can adjust the series resistor to get the voltage range you need and measure the analog voltage with a microcontroller." 
+
+And there is a [Collin's Lab](https://youtu.be/5HKvRrVWgYs) video for it.
 
 
 ## Usage
