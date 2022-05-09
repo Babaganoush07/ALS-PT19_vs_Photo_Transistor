@@ -36,8 +36,8 @@ void loop() {
   // HOW THE DISPLAY SHOULD LOOK.
   /*
      Photo Transistor
-     analogRead: 0000
-     Voltage: 0.0
+     analogRead: 2047
+     Voltage: 1.6
      █████____|
   */
 
@@ -51,8 +51,8 @@ void loop() {
   tft.fillRect(3, 47, phtrAnalogValue / 31.7 , 15, TFT_WHITE);  // 129 max to fit in the rectangle
   /*
      ALS-PT19
-     analogRead: 0000
-     Voltage: 0.0
+     analogRead: 2047
+     Voltage: 1.6
      █████_____|
   */
   tft.drawString("      ", 50, 135, 2);  // THIS STILL NEEDS ADJUSTING ON THE X
