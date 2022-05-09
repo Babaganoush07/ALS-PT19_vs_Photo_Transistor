@@ -11,6 +11,8 @@ void setup() {
   tft.fillScreen(TFT_BLACK);
 
   // THIS IS THE TEXT THAT DOESN'T CHANGE, SO I ONLY WRITE IT ONCE.
+  // drawString(const char *string, int32_t x, int32_t y, uint8_t font);
+  // drawRect(int32_t x, int32_t y, int32_t w, int32_t h, uint32_t color);
   tft.drawString("Photo Transistor", 0, 0, 2);
   tft.drawString("analogRead:", 0, 15, 2);
   tft.drawString("Voltage:", 0, 30, 2);
@@ -40,22 +42,23 @@ void loop() {
   */
 
   // THIS IS THE DATA THAT CHANGES, SO BLANK IT OUT FIRST AND THEN WRITE THE NEW DATA.
-  tft.drawString("      ", 50, 15, 2);
-  tft.drawNumber(phtrAnalogValue, 50, 15, 2);
-  tft.drawString("       ", 50, 30, 2);
-  tft.drawFloat(phtrVoltage, 1, 50, 30, 2);
+  // fillRect(int32_t x, int32_t y, int32_t w, int32_t h, uint32_t color);
+  tft.drawString("      ", 50, 15, 2);  // THIS STILL NEEDS ADJUSTING ON THE X
+  tft.drawNumber(phtrAnalogValue, 50, 15, 2);  // THIS STILL NEEDS ADJUSTING ON THE X
+  tft.drawString("       ", 50, 30, 2);  // THIS STILL NEEDS ADJUSTING ON THE X
+  tft.drawFloat(phtrVoltage, 1, 50, 30, 2);  // THIS STILL NEEDS ADJUSTING ON THE X
   tft.fillRect(3, 47, 129, 15, TFT_BLACK);
-  tft.fillRect(3, 47, phtrAnalogValue / 31.7 , 15, TFT_WHITE);  // 129 max
+  tft.fillRect(3, 47, phtrAnalogValue / 31.7 , 15, TFT_WHITE);  // 129 max to fit in the rectangle
   /*
      ALS-PT19
      analogRead: 0000
      Voltage: 0.0
      █████_____|
   */
-  tft.drawString("      ", 50, 135, 2);
-  tft.drawNumber(alsAnalogValue, 50, 135, 2);
-  tft.drawString("       ", 50, 150, 2);
-  tft.drawFloat(alsVoltage, 1, 50, 150, 2);
+  tft.drawString("      ", 50, 135, 2);  // THIS STILL NEEDS ADJUSTING ON THE X
+  tft.drawNumber(alsAnalogValue, 50, 135, 2);  // THIS STILL NEEDS ADJUSTING ON THE X
+  tft.drawString("       ", 50, 150, 2);  // THIS STILL NEEDS ADJUSTING ON THE X
+  tft.drawFloat(alsVoltage, 1, 50, 150, 2);  // THIS STILL NEEDS ADJUSTING ON THE X
   tft.fillRect(3, 167, 129, 15, TFT_BLACK);
-  tft.fillRect(3, 167, alsAnalogValue / 31.7 , 15, TFT_WHITE);  // 129 max
+  tft.fillRect(3, 167, alsAnalogValue / 31.7 , 15, TFT_WHITE);  // 129 max to fit in the rectangle
 }
