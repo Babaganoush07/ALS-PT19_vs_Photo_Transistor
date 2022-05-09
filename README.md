@@ -1,6 +1,6 @@
 # ALS-PT19 vs Photo Transistor
 > I was curios about using Light Sensors in projects and I couldn't decide between these two.
-> So I got both and I wanted to compare them agianst eachother.
+> So I got both and I wanted to compare them against eachother.
 
 
 ## Table of Contents
@@ -15,8 +15,8 @@
 
 
 ## General Information
-- I thought it might be cool to add a light sensors to a project.
-- Couldn't decide which one to get, so I got these 2.
+- I thought it might be cool to add a light sensor to a project.
+- Couldn't decide which one to get, so I got these two.
 - So here is a way to see how they both react to the same environment.
 
 
@@ -57,12 +57,13 @@ And there is a [Collin's Lab](https://youtu.be/5HKvRrVWgYs) video for it.
 
 
 ## Usage
-Now you should be able to seee the difference between the two sensors, and be able
+Now you should be able to see the difference between the two sensors, and be able
 to make a better decision for which one will work best for you.
 
 
 ## Project Status
 Project is: _complete_
+
 It looks like the Photo Transistor is more sensitive and more accurate for my needs. I do prefer the breakout board style of the ALS but it doesn't accurately represent the ambient light.
 
 
