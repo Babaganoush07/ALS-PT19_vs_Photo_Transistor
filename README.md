@@ -62,7 +62,8 @@ to make a better decision for which one will work best for you.
 
 
 ## Project Status
-Project is: _In progress_
+Project is: _complete_
+It looks like the Photo Transistor is more sensitive and more accurate for my needs. I do prefer the breakout board style of the ALS but it doesn't accurately represent the ambient light.
 
 
 ## Acknowledgements
