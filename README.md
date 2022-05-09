@@ -39,7 +39,7 @@ List the ready features here:
 
 
 ## Screenshots
--None yet.
+![sensor1](https://user-images.githubusercontent.com/94538153/167410584-4eb5f419-e91d-496a-ba2b-2ce9a0b7f855.jpg)
 
 
 ## Setup
