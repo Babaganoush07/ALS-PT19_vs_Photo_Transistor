@@ -2,7 +2,7 @@
 TFT_eSPI tft = TFT_eSPI();
 
 // SET THE PINS FOR THE LIGHT SENSORS.
-#define PhotoTransistor 36  // Maybe?
+#define PhotoTransistor 36
 #define ALS_PT19 15
 
 void setup() {
