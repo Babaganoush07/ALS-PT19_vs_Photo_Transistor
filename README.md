@@ -36,6 +36,7 @@
 List the ready features here:
 - It shows the Analog Voltage of both sensors (0-4095)
 - Converts ADC to Voltage (0.0 - 3.3)
+- Added a meter option as well ([total stole it](https://github.com/Bodmer/TFT_eSPI/tree/master/examples/160%20x%20128/TFT_Meter_5))
 
 
 ## Screenshots
@@ -69,3 +70,4 @@ It looks like the Photo Transistor is more sensitive and more accurate for my ne
 
 ## Acknowledgements
 - Got the README template from [ritaly](https://github.com/ritaly/README-cheatsheet).
+- Got the Meter from Bodmer [TFT_eSPI examples](https://github.com/Bodmer/TFT_eSPI/tree/master/examples/160%20x%20128/TFT_Meter_5).
