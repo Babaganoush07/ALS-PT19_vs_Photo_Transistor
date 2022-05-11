@@ -30,8 +30,8 @@ void loop() {
   int alsAnalogValue = analogRead(ALS_PT19);
 
   // CONVERT THE ANALOG READ TO A VOLTAGE.
-  float phtrVoltage = (3.3 / 4059.0) * phtrAnalogValue;
-  float alsVoltage = (3.3 / 4059.0) * alsAnalogValue;
+  float phtrVoltage = (3.3 / 4095.0) * phtrAnalogValue;
+  float alsVoltage = (3.3 / 4095.0) * alsAnalogValue;
 
   // HOW THE DISPLAY SHOULD LOOK.
   /*
