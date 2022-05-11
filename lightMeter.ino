@@ -51,8 +51,8 @@ void setup(void) {
   alsAnalogValue = analogRead(ALS_PT19);
 
   // CONVERT THE ANALOG READ TO A VOLTAGE.
-  phtrVoltage = (3.3 / 4059.0) * phtrAnalogValue;
-  alsVoltage = (3.3 / 4059.0) * alsAnalogValue;
+  phtrVoltage = (3.3 / 4095.0) * phtrAnalogValue;
+  alsVoltage = (3.3 / 4095.0) * alsAnalogValue;
 
   analogMeter(); // Draw analogue meter
 
