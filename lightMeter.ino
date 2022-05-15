@@ -74,7 +74,7 @@ void loop() {
     
     plotNeedle((phtrAnalogValue / 40.95), 0); // It takes between 2 and 14ms to replot the needle with zero delay
     //Serial.println(millis()-tt);
-  }
+  } // END IF
 }
 
 
@@ -115,19 +115,19 @@ void analogMeter()
     if (i >= -50 && i < 0) {
       tft.fillTriangle(x0, y0, x1, y1, x2, y2, TFT_YELLOW);
       tft.fillTriangle(x1, y1, x2, y2, x3, y3, TFT_YELLOW);
-    }
+    } // END IF
 
     // Green zone limits
     if (i >= 0 && i < 25) {
       tft.fillTriangle(x0, y0, x1, y1, x2, y2, TFT_GREEN);
       tft.fillTriangle(x1, y1, x2, y2, x3, y3, TFT_GREEN);
-    }
+    } // END IF
 
     // Orange zone limits
     if (i >= 25 && i < 50) {
       tft.fillTriangle(x0, y0, x1, y1, x2, y2, TFT_ORANGE);
       tft.fillTriangle(x1, y1, x2, y2, x3, y3, TFT_ORANGE);
-    }
+    } // END IF
 
     // Short scale tick length
     if (i % 25 != 0) tl = 8;
@@ -152,8 +152,8 @@ void analogMeter()
         case 0: tft.drawCentreString("50%", x0, y0, 1); break;
         case 1: tft.drawCentreString("75%", x0, y0, 1); break;
         case 2: tft.drawCentreString("100%", x0-2, y0-4, 1); break;
-      }
-    }
+      } // END SWITCH
+    } // END IF
 
     // Now draw the arc of the scale
     sx = cos((i + 5 - 90) * 0.0174532925);
@@ -162,14 +162,14 @@ void analogMeter()
     y0 = sy * M_SIZE*100 + M_SIZE*150;
     // Draw scale arc, don't draw the last part
     if (i < 50) tft.drawLine(x0, y0, x1, y1, TFT_BLACK);
-  }
+  } // END FOR
   
   tft.drawString(String(phtrVoltage, 1)+"V", M_SIZE*(3 + 230 - 40), M_SIZE*(119 - 20), 2); // Units at bottom right
   tft.drawCentreString("LIGHT", M_SIZE*120, M_SIZE*75, 2); // Comment out to avoid font 4
   tft.drawRect(1, M_SIZE*3, M_SIZE*236, M_SIZE*126, TFT_BLACK); // Draw bezel line
 
   plotNeedle(0, 0); // Put meter needle at 0
-}
+} // END analogMeter()
 
 // #########################################################################
 // Update needle position
@@ -230,5 +230,5 @@ void plotNeedle(int value, byte ms_delay)
 
     // Wait before next update
     delay(ms_delay);
-  }
-}
+  } // END WHILE
+} // END plotNeedle()
